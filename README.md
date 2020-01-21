@@ -31,7 +31,7 @@ This both makes development easier and improves performance.
 ## 3. 4 Main Hooks Overview
 
 |useState()|useEffect()|useContext()|useReducer()|
-|--|--|--|--|--|
+|--|--|--|--|
 |Similar to this.setState()|Similar to componentDidMount()|Similar to React-Redux|Similar to React-Redux|
 |Updates local component state|Use when you want to call function automatically|Allow you to `access and update the global context state` through the React context API.|Allow you to `update local component state` through redux actions and reducers|
 ||||`DO NOT` update state globally by itself|
