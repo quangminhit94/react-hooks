@@ -35,3 +35,27 @@ This both makes development easier and improves performance.
 |Similar to this.setState()|Similar to componentDidMount()|Similar to React-Redux|Similar to React-Redux|
 |Updates local component state|Use when you want to call function automatically|Allow you to `access and update the global context state` through the React context API.|Allow you to `update local component state` through redux actions and reducers|
 ||||`DO NOT` update state globally by itself|
+
+## 4. useState()
+
+```js
+const [value, setValue] = useState(initialState)
+
+[state value, set state function]
+
+Set State: setValue(value + 1)
+Read State: <p>{value}</p> in render method.
+
+Component re-render automatic when state changes
+
+Variable Names are user defined
+
+Without Array Destructuring:
+  const value = useState(0)[0]
+  const setValue = useState(0)[1]
+
+Multiple Properties:
+  const [value, setValue] = useState(initialState)
+  const [value2, setValue2] = useState(initialState)
+```
+
