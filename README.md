@@ -81,3 +81,18 @@ useEffect( () => {
 },[state.value])
 // useEffect will be called when state.value changes
 ```
+
+## 6. useReducer()
+
+```js
+import * as Reducer from './store/hooks/reducer'
+import * as ACTIONS from './store/actions/actions'
+
+// [value, function]
+const [state, dispatch] = useReducer(Reducer.reduxReducer, Reducer.initialState)
+
+Regular Action: dispatch(type: "ACTION")
+Action Creator: (payload) => dispatch(ACTIONS.create_actions(payload))
+Read State: <p>state.state_property</p> in render method. Same state property that you setup in initial state, in reducer
+
+```
