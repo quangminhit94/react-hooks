@@ -59,3 +59,25 @@ Multiple Properties:
   const [value2, setValue2] = useState(initialState)
 ```
 
+## 5. useEffect()
+
+```js
+useEffect( () => {
+  () => {return value}
+})
+// useEffect will be called every time a component renders
+```
+
+```js
+useEffect( () => {
+  () => {return value}
+},[])
+// useEffect will be called when the component mounts
+```
+
+```js
+useEffect( () => {
+  () => {return value}
+},[state.value])
+// useEffect will be called when state.value changes
+```
