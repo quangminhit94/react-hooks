@@ -96,3 +96,4 @@ Action Creator: (payload) => dispatch(ACTIONS.create_actions(payload))
 Read State: <p>state.state_property</p> in render method. Same state property that you setup in initial state, in reducer
 
 ```
+
